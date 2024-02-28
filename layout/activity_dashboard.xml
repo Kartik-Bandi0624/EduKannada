@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.87"
+    tools:context=".Activity.Dashboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/navigation_drawer"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/add_profile"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="5dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/dashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/cormorant_garamond_bold"
+                android:text="My Dashboard"
+                android:textColor="#000"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dashboard"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/cormorant_garamond_bold"
+                android:text=" Welcome to\n EduKannada online\n eduaction platform"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:id="@+id/firstline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="115dp"
+                android:weightSum="2">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="15dp"
+                    app:elevation="10dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/computer_icon" />
+
+                    <TextView
+                        android:id="@+id/computer_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="45dp"
+                        android:fontFamily="@font/cormorant_garamond_bold"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="1) Computer video classes"
+                        android:textColor="@drawable/change_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="15dp"
+                    app:elevation="10dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/pdf_icon" />
+
+                    <TextView
+                        android:id="@+id/computer_pdf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="45dp"
+                        android:fontFamily="@font/cormorant_garamond_bold"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="2) Computer class pdf file"
+                        android:textColor="@drawable/change_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Secondline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstline"
+                android:weightSum="2">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="15dp"
+                    app:elevation="10dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/question_icon" />
+
+                    <TextView
+                        android:id="@+id/gk_mcq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="45dp"
+                        android:fontFamily="@font/cormorant_garamond_bold"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="3) MCQ gk quiz test"
+                        android:textColor="@drawable/change_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="15dp"
+                    app:elevation="10dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/unavailable_icon" />
+
+                    <TextView
+                        android:id="@+id/pdf_view_only"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="45dp"
+                        android:fontFamily="@font/cormorant_garamond_bold"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="4) PDF file only view not download &amp; print"
+                        android:textColor="@drawable/change_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thirdline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Secondline"
+                android:weightSum="2">
+
+                <!--            <LinearLayout-->
+                <!--                android:id="@+id/thirdline"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_below="@+id/Secondline"-->
+                <!--                android:layout_marginBottom="50dp"-->
+                <!--                android:weightSum="2">-->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="15dp"
+                    app:elevation="10dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/update_icon" />
+
+                    <TextView
+                        android:id="@+id/news_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="45dp"
+                        android:fontFamily="@font/cormorant_garamond_bold"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="5) News update from by text"
+                        android:textColor="@drawable/change_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="15dp"
+                    app:elevation="10dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/kv_logo" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="45dp"
+
+                        android:fontFamily="@font/cormorant_garamond_bold"
+                        android:text="Send"
+                        android:textColor="@drawable/change_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thirdline1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thirdline"
+                android:layout_marginBottom="50dp"
+                android:weightSum="2">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="15dp"
+                    app:elevation="10dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/update_icon" />
+
+                    <TextView
+                        android:id="@+id/news_update1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="45dp"
+                        android:fontFamily="@font/cormorant_garamond_bold"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="7) News update from by text"
+                        android:textColor="@drawable/change_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="15dp"
+                    app:elevation="10dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/kv_logo" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="45dp"
+                        android:fontFamily="@font/cormorant_garamond_bold"
+                        android:text="Send"
+                        android:textColor="@drawable/change_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_color_first"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/shareNotes"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/share_notes_logo" />
+
+    <TextView
+        android:id="@+id/monthly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cormorant_garamond_bold"
+        android:padding="7dp"
+        android:text="Monthly"
+        android:textColor="#4B2ECC"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rs"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="RS.69.00"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/cormorant_garamond_bold"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:text="+ Service"
+            android:textColor="#4B2ECC"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/cormorant_garamond_bold"
+            android:gravity="end"
+            android:padding="10dp"
+            android:paddingEnd="30dp"
+            android:text="+ Add-ons"
+            android:textColor="#4B2ECC"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/cormorant_garamond_bold"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:text="+ Advantages"
+            android:textColor="#4B2ECC"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/cormorant_garamond_bold"
+            android:gravity="end"
+            android:padding="10dp"
+            android:paddingEnd="30dp"
+            android:text="+ Bonuses"
+            android:textColor="#4B2ECC"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

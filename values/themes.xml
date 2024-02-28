@@ -1,0 +1,31 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EduKannada" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#5A0245</item>
+
+        <item name="actionBarSize">60dp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="fontFamily">@font/artifika</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#E3C1DA</item>
+    </style>
+
+    <style name="Theme.EduKannada" parent="Base.Theme.EduKannada" />
+
+    <style name="Theme.ModernDashboard" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/lavender</item>
+        <item name="colorPrimaryVariant">@color/lavender</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
